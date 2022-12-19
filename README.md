@@ -12,9 +12,10 @@
 ##### 루트 폴더 안에 데이터베이스 역할을 해주는 db.josn파일을 생성해주고, 안에는 
 ##### 이미지의 url, 기타 텍스트 정보들이 기입되어 있습니다. 서버를 실행시켜주고 fetch를 통해
 ##### api의 값을 갖고오는 형태로 구현 되었습니다.
-##### react-bootstrap과 미디어쿼리를 사용해 반응형을 구현하였으며, 
-##### BrowserRouter, Routes, Route, Link, Navigate컴포넌트와 Navigate, useParams, useSearchParams, useNavigate Hook을
-##### SPA형태의 사이트와 검색기능, 주소값에 ID값을 갖고오는 기능을 구현하였습니다.
+##### react-bootstrap과 미디어쿼리를 사용해 반응형을 구현하였습니다, 
+##### 검색기능은 router의 쿼리 기능을 사용하여 input에 텍스트가 입력되어지고 keydown시 처음 api를 갖고오는 fetch에 쿼리값이 대입
+##### 되어 지는 형식으로 해당 키워드가 포함된 데이터가 불러와지게끔 구현하였습니다
+##### 또한 useParams를 이용하며 클릭한 id값과 불러온 api의 id값과 동일한 데이터를 불러와 detail페이지를 구현하였습니다.
 
 # 느낀점, 알게된점, 나의 생각
 ##### 크게 두가지 유용한 기능을 알게되었다. 첫번째로 useParams이다. path에서의 :id 값을 일반적인 문자, 숫자가 아닌
